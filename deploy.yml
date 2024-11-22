@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cont1
-        image: revanth21/moviesrepo:latest
+        image: revanth21/trainrepo:latest
         ports:
           - containerPort: 80
 ---
