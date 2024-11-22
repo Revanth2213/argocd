@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: train
+    app: movies
   name: movies-deploy
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: train
+      app: movies
   template:
     metadata:
       labels:
-        app: train
+        app: movies
     spec:
       containers:
       - name: cont1
-        image: siraj321/paytmtrain:latest
+        image: revanth21/moviesrepo:latest
         ports:
           - containerPort: 80
 ---
